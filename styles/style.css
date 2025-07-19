@@ -160,7 +160,9 @@ header {
     max-width: 1110px;
     margin: 0 auto;
     display: flex;
-    gap: 100px
+    gap: 100px;
+    margin-bottom: 100px;
+    
 }
 
 .featured-title{
@@ -182,7 +184,32 @@ header {
      background-color:  rgba(224, 44, 109, 1);
      border: none;
 }
-
+footer{
+    background-color: rgb(6, 6, 37);
+    text-align: center;
+    padding: 50px;
+}
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+.footer-description{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgba(217, 219, 225, 1);
+}
+.fa-brands{
+     color: #FFFFFF;
+     margin: 20px;
+     font-size: 2rem;
+     /* margin-top: 20px; */
+     
+}
+.icon{
+    gap: 20px;
+}
 @media screen and (max-width: 576px) {
     .nav-section{
         flex-direction: column;
@@ -221,6 +248,11 @@ header {
         justify-content: center;
         padding-left: 20px;
     }
+    footer{
+        text-align: center;
+    }
+    
+    
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -248,9 +280,12 @@ header {
     }
 
     .featured{
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         padding-left: 20px;
+    }
+     footer{
+        text-align: center;
     }
 }
 
