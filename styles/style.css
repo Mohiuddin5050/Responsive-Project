@@ -97,6 +97,91 @@ header {
     /* border-radius: 0 2px 8px rgba(192, 204, 218, 0.10); */
 }
 
+.card-section{
+     max-width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    
+}
+.card{
+    max-width: 300px;
+    padding: 17px 14px 20px 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.card-head-title{
+    /* display: flex; */
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.card-head{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.card-title{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: rgba(24, 25, 31, 1);
+}
+.card-price{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+}
+.star{
+    height: 12px;
+    width: 12px;
+    gap: 0;
+}
+.ratting{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(94, 99, 102, 1);
+}
+.card-description{
+    color: rgba(120, 120, 133, 1);
+     font-size: 0.9rem;
+    font-weight: 600;
+}
+.see-more{
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+}
+.featured-section{
+    
+}
+.featured{
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    gap: 100px
+}
+
+.featured-title{
+    font-weight: 700;
+    font-size: 2.30rem;
+    color: #0A0826;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.featured-description{
+    font-weight: 700;
+    color: #6C6C6C;
+    margin-bottom: 15px;
+}
+.btn{
+     font-weight: 700;
+     color: #FFFFFF;
+     padding: 10px 25px;
+     background-color:  rgba(224, 44, 109, 1);
+     border: none;
+}
 
 @media screen and (max-width: 576px) {
     .nav-section{
@@ -119,13 +204,29 @@ header {
 
     .sponsor{
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: center;
+    }
+
+    .card-head{
+       grid-template-columns: repeat(1, 1fr);
+       justify-content: center;
+       padding-left: 15px;
+    }
+
+    .see-more{
+        text-align: center;
+    }
+    .featured{
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .nav-section{
         flex-direction: column;
+        gap: 20px;
     }
      .head-section{
         flex-direction: column-reverse;
@@ -136,6 +237,20 @@ header {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+    }
+
+    .card-head{
+       grid-template-columns: repeat(2, 1fr);
+       justify-content: center;
+    }
+     .see-more{
+        text-align: center;
+    }
+
+    .featured{
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
     }
 }
 
